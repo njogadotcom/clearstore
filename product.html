@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Product Details</h1>
+    <nav>
+      <a href="products.html">Back to Products</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="product-detail">
+    <img src="assets/img/product1.jpg" alt="Smartwatch"/>
+    <div>
+      <h2>Smartwatch X</h2>
+      <p>Advanced health tracking and notifications on your wrist.</p>
+      <p><strong>Price: </strong>$49.99</p>
+      <button onclick="addToCart('Smartwatch X', 49.99)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ClearView Store
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
