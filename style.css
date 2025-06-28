@@ -1,6 +1,174 @@
-/* Existing CSS styles */
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* New Section for 'Now Available On' */
+/* Body and layout */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+    animation: fadeIn 1s ease-out; /* Page load animation */
+}
+
+/* Fade-in effect for the page */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Header */
+header {
+    background-color: #3e8e41;
+    padding: 30px 20px;
+    text-align: center;
+    animation: slideDown 1s ease-in-out; /* Header animation */
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+header .logo h1 {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Plan section */
+.plans {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.plans h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Plan Cards */
+.plan-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.plan-card {
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    margin-bottom: 30px;
+    position: relative;
+    animation: bounceIn 1s ease-out; /* Card bounce animation */
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.plan-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+.price {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.price span {
+    font-size: 18px;
+    color: #888;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+ul li i {
+    margin-right: 10px;
+    color: #3e8e41;
+    transition: transform 0.3s ease;
+}
+
+/* Icon floating effect */
+.plan-card:hover ul li i {
+    transform: translateY(-5px);
+}
+
+.order-btn {
+    padding: 15px 25px;
+    background-color: #3e8e41;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.order-btn:hover {
+    background-color: #348e2d;
+    transform: scale(1.05); /* Button grow on hover */
+}
+
+/* Specific Plan Styles */
+.basic {
+    background: linear-gradient(145deg, #e74c3c, #f44336);
+    color: white;
+}
+
+.personal {
+    background: linear-gradient(145deg, #f39c12, #f1c40f);
+    color: white;
+}
+
+.standard {
+    background: linear-gradient(145deg, #3498db, #2980b9);
+    color: white;
+}
+
+.ultimate {
+    background: linear-gradient(145deg, #2ecc71, #27ae60);
+    color: white;
+}
+
+/* Now Available Section */
 .available {
     text-align: center;
     padding: 40px 20px;
@@ -46,4 +214,12 @@
     font-size: 18px;
     font-weight: 500;
     color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #3e8e41;
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
