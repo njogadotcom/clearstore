@@ -7,76 +7,81 @@
 
 /* Body and layout */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
     color: #333;
     margin: 0;
 }
 
 /* Header */
 header {
-    background-color: #6c5ce7;
-    padding: 20px;
+    background-color: #3e8e41;
+    padding: 30px 20px;
     text-align: center;
 }
 
 header .logo h1 {
-    font-size: 36px;
+    font-size: 40px;
     color: white;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* Plan section */
 .plans {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 .plans h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: #333;
 }
 
 /* Plan Cards */
 .plan-cards {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .plan-card {
-    background-color: white;
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
     padding: 30px;
     border-radius: 10px;
-    width: 250px;
+    width: 300px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .plan-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .plan-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
 }
 
 .price {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
 .price span {
-    font-size: 16px;
+    font-size: 18px;
     color: #888;
 }
 
@@ -89,52 +94,56 @@ ul {
 ul li {
     font-size: 16px;
     margin-bottom: 10px;
+    color: #444;
+}
+
+ul li i {
+    margin-right: 10px;
+    color: #3e8e41;
 }
 
 .order-btn {
-    padding: 12px 20px;
-    background-color: #6c5ce7;
+    padding: 15px 25px;
+    background-color: #3e8e41;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
     letter-spacing: 1px;
+    width: 100%;
 }
 
 .order-btn:hover {
-    background-color: #5a4ee2;
+    background-color: #348e2d;
 }
 
 /* Specific Plan Styles */
 .basic {
-    background-color: #e74c3c;
+    background: linear-gradient(145deg, #e74c3c, #f44336);
     color: white;
 }
 
 .personal {
-    background-color: #f39c12;
+    background: linear-gradient(145deg, #f39c12, #f1c40f);
     color: white;
 }
 
 .standard {
-    background-color: #3498db;
+    background: linear-gradient(145deg, #3498db, #2980b9);
     color: white;
 }
 
 .ultimate {
-    background-color: #2ecc71;
+    background: linear-gradient(145deg, #2ecc71, #27ae60);
     color: white;
 }
 
 /* Footer */
 footer {
-    background-color: #6c5ce7;
+    background-color: #3e8e41;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
     color: white;
 }
