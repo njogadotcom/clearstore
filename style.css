@@ -1,50 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clearview IPTV Plans</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Clearview IPTV</h1>
-        </div>
-    </header>
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section class="plans">
-        <h2>Our Plans</h2>
-        <div class="plan-cards">
-            <div class="plan-card">
-                <h3>GOOD</h3>
-                <div class="ram">1 GB</div>
-                <p class="price">$2.99 <span>/ per month</span></p>
-                <button class="order-btn">Order</button>
-            </div>
-            <div class="plan-card recommended">
-                <h3>RECOMMENDED</h3>
-                <div class="ram">2 GB</div>
-                <p class="price">$5.98 <span>/ per month</span></p>
-                <button class="order-btn">Order</button>
-            </div>
-            <div class="plan-card">
-                <h3>BETTER</h3>
-                <div class="ram">3 GB</div>
-                <p class="price">$8.97 <span>/ per month</span></p>
-                <button class="order-btn">Order</button>
-            </div>
-            <div class="plan-card">
-                <h3>BEST</h3>
-                <div class="ram">4 GB</div>
-                <p class="price">$11.96 <span>/ per month</span></p>
-                <button class="order-btn">Order</button>
-            </div>
-        </div>
-    </section>
+/* Body and layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+}
 
-    <footer>
-        <p>&copy; 2025 Clearview IPTV. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* Header */
+header {
+    background-color: #6c5ce7;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    color: white;
+}
+
+/* Plan section */
+.plans {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.plans h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.plan-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.plan-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.price span {
+    font-size: 16px;
+    color: #888;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.order-btn {
+    padding: 12px 20px;
+    background-color: #6c5ce7;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #5a4ee2;
+}
+
+/* Specific Plan Styles */
+.basic {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.personal {
+    background-color: #f39c12;
+    color: white;
+}
+
+.standard {
+    background-color: #3498db;
+    color: white;
+}
+
+.ultimate {
+    background-color: #2ecc71;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #6c5ce7;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+}
