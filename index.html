@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Clearstore - IPTV Store</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClearView TV</title>
+  <meta name="description" content="Modern IPTV website with animation">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Clearstore IPTV Subscriptions</h1>
-  </header>
-  
-  <div class="product-grid">
-    <div class="product" onclick="toggleDescription('iptv-desc')">
-      <img src="images/iptv.jpg" alt="IPTV Subscription">
-      <h2>IPTV Subscription</h2>
-      <p id="iptv-desc" class="description">Choose your plan: 1M $6, 3M $12, 6M $24, 1Y $48. Access 13,000+ channels & VOD on Smart TVs and mobile.</p>
+
+  <!-- Hero -->
+  <section class="hero" data-aos="fade-up">
+    <div class="overlay">
+      <div class="container">
+        <h1>Stream Limitlessly with ClearView TV</h1>
+        <p>Thousands of channels, movies, and series at your fingertips.</p>
+        <a href="#plans" class="btn">Start Watching</a>
+      </div>
     </div>
+  </section>
 
-    <div class="product" onclick="toggleDescription('etv-desc')">
-      <img src="images/etv.jpg" alt="ETV Subscription">
-      <h2>ETV Subscription</h2>
-      <p id="etv-desc" class="description">ETV IPTV plans: 1M $6, 3M $12, 6M $24, 1Y $48. Flexible, reliable, works on your devices anytime.</p>
+  <!-- Plans -->
+  <section id="plans" class="plans">
+    <div class="container">
+      <h2 data-aos="fade-right">Our Plans</h2>
+      <div class="grid">
+        <div class="plan" data-aos="zoom-in" data-aos-delay="100">
+          <h3>1 Month</h3>
+          <p class="price">$8</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> HD Channels</li>
+            <li><i class="fas fa-check-circle"></i> 24/7 Support</li>
+          </ul>
+        </div>
+        <div class="plan" data-aos="zoom-in" data-aos-delay="200">
+          <h3>3 Months</h3>
+          <p class="price">$18</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Multi-Device</li>
+            <li><i class="fas fa-check-circle"></i> EPG & Catch Up</li>
+          </ul>
+        </div>
+        <div class="plan" data-aos="zoom-in" data-aos-delay="300">
+          <h3>6 Months</h3>
+          <p class="price">$38</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Premium Channels</li>
+            <li><i class="fas fa-check-circle"></i> Save More</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="product" onclick="toggleDescription('startime-desc')">
-      <img src="images/startime.jpg" alt="Startime Subscription">
-      <h2>Startime Subscription</h2>
-      <p id="startime-desc" class="description">Watch live football & series anytime. Fast loading, interactive live broadcasts, and VIP access on Smart TVs and mobile.</p>
+  <!-- Features -->
+  <section class="features" data-aos="fade-up">
+    <div class="container">
+      <h2>Core Features</h2>
+      <div class="features-grid">
+        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-tv"></i> Live TV & Series
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-paint-brush"></i> Modern UI
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-record-vinyl"></i> Recording & Catch Up
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-star"></i> Favorites
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="product" onclick="toggleDescription('glassico-desc')">
-      <img src="images/glassico.jpg" alt="Glassico Xtream IPTV Player">
-      <h2>Glassico Xtream IPTV Player</h2>
-      <p id="glassico-desc" class="description">Seamless Xtream IPTV player for free. Enjoy top streaming with enhanced, user-friendly experience.</p>
-    </div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ClearView TV</p>
+  </footer>
 
-    <div class="product" onclick="toggleDescription('sport-desc')">
-      <img src="images/sport.jpg" alt="Sport TV">
-      <h2>Sport TV</h2>
-      <p id="sport-desc" class="description">600+ live channels including cricket in 4K HD quality. One app to watch live sports without hassle.</p>
-    </div>
-
-    <div class="product" onclick="toggleDescription('dstv-desc')">
-      <img src="images/dstv.jpg" alt="DSTV Stream">
-      <h2>DSTV Stream</h2>
-      <p id="dstv-desc" class="description">DSTV Stream subscription valid for 1 month. Watch your favorite channels live anytime, anywhere.</p>
-    </div>
-
-    <div class="product" onclick="toggleDescription('netflix-desc')">
-      <img src="images/netflix.jpg" alt="Netflix">
-      <h2>Netflix Note</h2>
-      <p id="netflix-desc" class="description">Note: This app has no monthly subscription. Enjoy Netflix without restrictions on your devices.</p>
-    </div>
-
-  </div>
-
-<script>
-function toggleDescription(id) {
-  const desc = document.getElementById(id);
-  desc.classList.toggle('show');
-}
-</script>
-
+  <!-- AOS & Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
