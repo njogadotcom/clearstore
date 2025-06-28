@@ -216,6 +216,52 @@ ul li i {
     color: #333;
 }
 
+/* Floating Buttons Styles */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.floating-buttons a {
+    display: block;
+    background-color: #25D366; /* WhatsApp color */
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-buttons .whatsapp-button {
+    background-color: #25D366; /* WhatsApp green */
+}
+
+.floating-buttons .email-button {
+    background-color: #D44638; /* Email red */
+}
+
+.floating-buttons a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.floating-buttons i {
+    vertical-align: middle;
+}
+
+/* Adjust icon size */
+.floating-buttons .whatsapp-button i,
+.floating-buttons .email-button i {
+    font-size: 28px;
+}
+
 /* Footer */
 footer {
     background-color: #3e8e41;
