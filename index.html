@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Streaming Services Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Streaming Services</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="cart-info">
+      Cart: <span id="cart-count">0</span> items
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product">
+        <img src="sport-tv.jpg" alt="Sport TV">
+        <h2>Sport Tv</h2>
+        <p class="price">$5.02</p>
+        <button onclick="addToCart('Sport Tv', 5.02)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="dstv-stream.jpg" alt="DSTV Stream">
+        <h2>DSTV Stream</h2>
+        <p class="price">$4.19</p>
+        <button onclick="addToCart('DSTV Stream', 4.19)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="netflix.jpg" alt="Netflix">
+        <h2>Netflix</h2>
+        <p class="price">$9.21</p>
+        <button onclick="addToCart('Netflix', 9.21)">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Streaming Store</p>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
