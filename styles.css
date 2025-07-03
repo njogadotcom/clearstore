@@ -1,12 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
+  background: #f0f2f5;
+  color: #333;
 }
 
 header {
-  background: #111;
+  background: #0d1b2a;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -16,10 +17,21 @@ header nav a {
   color: #fff;
   margin: 0 0.5rem;
   text-decoration: none;
+  position: relative;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+header nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00c897;
+  transition: width 0.3s;
+  margin: auto;
+}
+
+header nav a:hover::after {
+  width: 100%;
 }
 
 .cart-info {
@@ -39,46 +51,61 @@ main {
 
 .product {
   background: #fff;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .product img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.product img:hover {
+  transform: scale(1.05);
 }
 
 .product h2 {
   margin: 0.5rem 0;
+  font-size: 1.2rem;
 }
 
 .product .price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #0d1b2a;
 }
 
 .product button {
-  background: #111;
+  background: #00c897;
   color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   margin-top: 0.5rem;
   cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.3s;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .product button:hover {
-  background: #444;
+  background: #00b388;
+  transform: scale(1.05);
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: #111;
+  background: #0d1b2a;
   color: #fff;
 }
