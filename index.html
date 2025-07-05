@@ -1,54 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Streaming Services Store</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>KenFlix – Streaming Zone</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Streaming Services</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="checkout.html">Checkout</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="cart-info">
-      Cart: <span id="cart-count">0</span> items
-    </div>
+    <h1>🎬 KenFlix</h1>
+    <p class="tagline">Streaming Zone - Underground Edition</p>
+    <input type="text" id="searchInput" placeholder="Search movies...">
   </header>
 
-  <main>
-    <section class="products">
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1600788907410-2f6b29f90b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Sport TV">
-        <h2>Sport TV</h2>
-        <p class="price">$5.02</p>
-        <button onclick="addToCart('Sport TV', 5.02)">Add to Cart</button>
-      </div>
+  <main id="movieList"></main>
 
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1586971858830-9dfc1746f2b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="DSTV Stream">
-        <h2>DSTV Stream</h2>
-        <p class="price">$4.19</p>
-        <button onclick="addToCart('DSTV Stream', 4.19)">Add to Cart</button>
-      </div>
-
-      <div class="product">
-        <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Netflix">
-        <h2>Netflix</h2>
-        <p class="price">$9.21</p>
-        <button onclick="addToCart('Netflix', 9.21)">Add to Cart</button>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Streaming Store</p>
-  </footer>
-
-  <script src="cart.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
